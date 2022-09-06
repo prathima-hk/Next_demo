@@ -1,15 +1,18 @@
-import navStyles from '../styles/Nav.module.css';
+import layout from '../styles/Layout.module.css'
 import Link from 'next/link'
 
 const Nav =  () => {
     return (
       <nav>
-        <ul className={navStyles.menu}>
-            <li className={navStyles.list}>
+        <ul className={layout.menu}>
+            <li className={layout.list}>
                 <Link href='/'>Home</Link>
             </li>  
-            <li className={navStyles.list}>
+            <li className={layout.list}>
                 <Link href='/about'>About</Link>
+            </li>
+            <li className={layout.list}>
+             <Link href='/article'>Articles</Link>
             </li>
         </ul>
       </nav>

@@ -20,9 +20,6 @@ export default function Home({posts}) {
         </div>
       )
       }
-   
-
-
 
 export async function getStaticProps(){
   const resp = await fetch('https://jsonplaceholder.typicode.com/posts')
